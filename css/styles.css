@@ -178,6 +178,10 @@ a{
     fill: var(--color-primary);
 }
 
+.icon--white{
+    fill: #fff;
+}
+
 .icon-container{
     align-items: center;
     background-color: #f3f9fa;
@@ -186,6 +190,13 @@ a{
     height: 64px;
     justify-content: center;
     width: 64px;
+}
+.icon--small{
+    height: 32px;
+    width: 32px;
+}
+.icon-container--accent{
+    background: var(--color-accent);
 }
 
 /* Buttons */
@@ -293,7 +304,6 @@ a{
 /* Cards */
 
 .card{
-    width: 50%;
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
@@ -439,11 +449,40 @@ a{
 
 @media screen and (min-width: 768px) {
     .grid--1x2{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (min-width: 1024px) {
     .grid--1x3{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Testimonial */
+
+.testimonial{
+    padding: 3rem;
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image > img{
+    width: 100%;
+}
+
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width:768px) {
+    .testimonial .quote,
+    .testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote{
+        margin-left: 6rem;
     }
 }

@@ -11,25 +11,27 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section class="block block--dark block--skewed-left hero">
-        <div class="container grid grid--1x2">
-            <header class="block__header hero__content">
-                <h1 class="block__heading">Nekapa Yemale Zindabad</h1>
-                <p class="hero__tagline">Politics should guide the country in the right path and direction</p>
-                <a href="#" class="btn btn--accent btn--stretched">
-                    Vote CPN UML
-                </a>
-            </header> 
-            <picture>
-                <source type="image/webp"
-                srcset="images/hand.webp 1x,
-                images/hand@2x.webp 2x">
-                <source type="image/png"
-                srcset="images/hand.png 1x,
-                images/hand@2x.png 2x">
-                <img class="hero__image" src="images/hand.png" alt="">
-            </picture>
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h2>Starting at $9 per month</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, recusandae.</p>
+        </header>
+        <div class="input-group">
+            <input type="text" class="input" placeholder="Enter domain name here">
+            <button class="btn btn--accent"><svg class="icon icon--white">
+                <use xlink:href="images/sprite.svg#search"></use>
+            </svg>Search</button>
         </div>
+        <ul class="list block-domain__prices">
+            <li>
+                <span class="badge badge--secondary">Gulmi $9</span>
+            </li>
+            <li>Sirseni $200</li>
+            <li>Tmg $40</li>
+            <li>Pokhara $30</li>
+            <li>Batauli $20</li>
+            <li>Nepal $(1/0)</li>
+        </ul>
     </section>
     <script src="js/main.js"></script>
 </body>

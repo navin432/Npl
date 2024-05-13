@@ -9,9 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=optional" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
- 
 </head>
 <body>
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+                <h1 class="block__heading">Nekapa Yemale Zindabad</h1>
+                <p class="hero__tagline">Politics should guide the country in the right path and direction</p>
+                <a href="#" class="btn btn--accent btn--stretched">
+                    Vote CPN UML
+                </a>
+            </header> 
+            <picture>
+                <source type="image/webp"
+                srcset="images/hand.webp 1x,
+                images/hand@2x.webp 2x">
+                <source type="image/png"
+                srcset="images/hand.png 1x,
+                images/hand@2x.png 2x">
+                <img class="hero__image" src="images/hand.png" alt="">
+            </picture>
+        </div>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>

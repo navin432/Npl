@@ -1,77 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=optional" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=optional"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="block">
         <header class="block__header">
-            <h2>Welcome To Nepal</h2>
+          <h2>What are customers are saying</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
         </header>
-        <div class="container grid grid--1x2">
-            <picture class="block-showcase__image">
-                <source type="image/jpg" srcset="images/mero-gau.jpg 1x, images/mero-gau@2x.jpg 2x">
-                <img  src="images/mero-gau@2x.jpg" alt="">
-            </picture>
-            <ul class="list">
-                <li>
-                    <div class="media">
+        <div class="container">
+          <div class="card testimonial">
+            <div class="grid grid--1x2">
+              <div class="testimonial__image">
+                <img
+                  class="testimonial__image"
+                  src="images/teatimonial.jpg"
+                  alt="A Dangerous Man in Scooter"
+                />
+                <span class="icon-container icon-container--accent">
+                  <svg class="icon icon--white icon--small">
+                    <use xlink:href="images/sprite.svg#quotes"></use>
+                  </svg>
+                </span>
+              </div>
+              <blockquote class="quote">
+                <p class="quote__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                  sed veniam incidunt nobis fugiat cumque at cupiditate adipisci
+                  illo iure.
+                </p>
+                <footer>
+                  <div class="media">
                     <div class="media__image">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#wordpress"></use>
-                        </svg>
+                      <svg class="icon icon--primary quote__line">
+                        <use xlink:href="images/sprite.svg#line"></use>
+                      </svg>
                     </div>
                     <div class="media__body">
-                        <h3 class="media__title block__heading">
-                            Easy Start and Managed Cloud
-                        </h3>
-                        <p >
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos atque mollitia quisquam, fugiat quaerat aliquid doloremque ea sunt velit itaque.
-                        </p>
+                      <h3 class="media__title quote__author">Navin Gharti</h3>
+                      <p class="quote__organization">Don</p>
                     </div>
-                </li>
-                <li>
-                    <div class="media">
-                    <div class="media__image">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#wordpress"></use>
-                        </svg>
-                    </div>
-                    <div class="media__body">
-                        <h3 class="media__title block__heading">
-                            Easy Start and Managed Cloud
-                        </h3>
-                        <p >
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos atque mollitia quisquam, fugiat quaerat aliquid doloremque ea sunt velit itaque.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="media">
-                    <div class="media__image">
-                        <svg class="icon icon--primary">
-                            <use xlink:href="images/sprite.svg#wordpress"></use>
-                        </svg>
-                    </div>
-                    <div class="media__body">
-                        <h3 class="media__title block__heading">
-                            Easy Start and Managed Cloud
-                        </h3>
-                        <p >
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio!
-                        </p>
-                    </div>
-                </li>
-                </ul>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

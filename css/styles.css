@@ -26,7 +26,6 @@ html{
 }
 
 body{
-    margin: 1rem;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
@@ -642,6 +641,12 @@ a{
     margin: 0 auto;
 }
 
+@media screen and (max-width:350px) {
+    .block{
+        padding: var(--padding-vertical) 1rem;;
+    }
+}
+
 /* Navigation Bar */
 .nav{
     background: #000;
@@ -835,7 +840,7 @@ a{
 
 .footer__brand img{
     width: 100%;
-    
+
 }
 
 .footer__copyright{

@@ -14,93 +14,77 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <footer class="block block--dark footer">
-      <div class="container grid footer__sections">
-        <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Products</h2>
-            <object
-              class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="">Item1</a></li>
-              <li><a href="">Item2</a></li>
-              <li><a href="">Item3</a></li>
-              <li><a href="">Item4</a></li>
-              <li><a href="">Item5</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Navin</h2>
-            <object
-              class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="">Item1</a></li>
-              <li><a href="">Item2</a></li>
-              <li><a href="">Item3</a></li>
-              <li><a href="">Item4</a></li>
-              <li><a href="">Item5</a></li>
-              <li><a href="">Item6</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Akash</h2>
-            <object
-              class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-                <li><a href="">Item1</a></li>
-                <li><a href="">Item2</a></li>
-                <li><a href="">Item3</a></li>
-                <li><a href="">Item4</a></li>
-                <li><a href="">Item5</a></li>
-                <li><a href="">Item6</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Vai</h2>
-            <object
-              class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-                <li><a href="">Item1</a></li>
-                <li><a href="">Item2</a></li>
-                <li><a href="">Item3</a></li>
-                <li><a href="">Item4</a></li>
-                <li><a href="">Item5</a></li>
-                <li><a href="">Item6</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer__brand">
-            <img class="logo-img" src="images/logo.svg" alt="">
-            <p class="footer__copyright">Copyright 200 Navin</p>
-        </section>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="nav collapsible">
+        <a href="/">
+          <img class="logo-img" src="images/logo.svg" alt="" />
+        </a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPN</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Block -->
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Nekapa Yemale Zindabad</h1>
+          <p class="hero__tagline">
+            Politics should guide the country in the right path and direction
+          </p>
+          <a href="#" class="btn btn--accent btn--stretched"> Vote CPN UML </a>
+        </header>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/hand.webp 1x, images/hand@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/hand.png 1x, images/hand@2x.png 2x"
+          />
+          <img class="hero__image" src="images/hand.png" alt="" />
+        </picture>
       </div>
-    </footer>
+    </section>
+
+    <!-- Domain Block -->
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Starting at $9 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+          recusandae.
+        </p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter domain name here" />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li>
+          <span class="badge badge--secondary">Gulmi $9</span>
+        </li>
+        <li>Sirseni $200</li>
+        <li>Tmg $40</li>
+        <li>Pokhara $30</li>
+        <li>Batauli $20</li>
+        <li>Nepal $(1/0)</li>
+      </ul>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>

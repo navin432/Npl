@@ -36,8 +36,10 @@
         <ul class="list nav__list collapsible__content">
           <li class="nav__item"><a href="#places-to-go"> Places to go</a></li>
           <li class="nav__item"><a href="#things-to-do">Things to do</a></li>
-          <li class="nav__item"><a href="#">Plan Your Trip</a></li>
-          <li class="nav__item"><a href="#">Travel Updates</a></li>
+          <li class="nav__item">
+            <a href="#plan-your-trip">Plan Your Trip</a>
+          </li>
+          <li class="nav__item"><a href="#info">Other Info</a></li>
         </ul>
       </nav>
     </header>
@@ -108,7 +110,7 @@
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
-            <header class="card__header">
+            <header class="card__header ktm">
               <h3 class="plan__name">Kathmandu</h3>
               <span class="plan__price">$140</span>
               <span class="plan__billing-cycle">/day</span>
@@ -130,7 +132,7 @@
         </div>
         <div class="plan plan--popular">
           <div class="card card--primary">
-            <header class="card__header">
+            <header class="card__header hike">
               <h3 class="plan__name">Epic Hikes</h3>
               <span class="plan__price">$600</span>
               <span class="plan__billing-cycle">/week</span>
@@ -150,7 +152,7 @@
         </div>
         <div class="plan">
           <div class="card card--secondary">
-            <header class="card__header">
+            <header class="card__header everest">
               <h3 class="plan__name">Flight Over Mountains</h3>
               <span class="plan__price">$100</span>
               <span class="plan__billing-cycle">/hour</span>
@@ -183,7 +185,7 @@
         <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <a href="/">
-              <img class="logo-img" src="images/logo.svg" alt="" />
+              <img class="logo-img" src="images/mountain.png" alt="" />
             </a>
           </span>
           <h3 class="feature__heading">Everest: The Peak</h3>
@@ -212,7 +214,7 @@
         <div class="feature__content">
           <span class="icon-container">
             <a href="/">
-              <img class="logo-img" src="images/logo.svg" alt="" />
+              <img class="logo-img" src="images/nepal.png" alt="" />
             </a>
           </span>
           <h3 class="feature__heading">Lumbini: Buddha Place</h3>
@@ -242,7 +244,7 @@
         <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <a href="/">
-              <img class="logo-img" src="images/logo.svg" alt="" />
+              <img class="logo-img" src="images/nepalese.png" alt="" />
             </a>
           </span>
           <h3 class="feature__heading">Pokhara: Lakes and Lakes</h3>
@@ -270,7 +272,10 @@
     </section>
 
     <!-- Showcase-Block -->
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section
+      id="plan-your-trip"
+      class="block block--dark block--skewed-right block-showcase"
+    >
       <header class="block__header">
         <h2>Plan Your Trip</h2>
       </header>
@@ -284,16 +289,14 @@
           <li>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
+                <img src="images/weather.png" class="icon icon--white" alt="">
               </div>
               <div class="media__body">
-                <h3 class="media__title block__heading">Trip Ideas</h3>
+                <h3 class="media__title block__heading">Best time to visit</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dignissimos atque mollitia quisquam, fugiat quaerat aliquid
-                  doloremque ea sunt velit itaque.
+                  Without a doubt, the best time to visit Nepal is during the
+                  Autumn months of September to November and the Spring months
+                  of March to May.
                 </p>
               </div>
             </div>
@@ -301,16 +304,17 @@
           <li>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
+                <img src="images/boudhanath.png" class="icon" alt="">
               </div>
               <div class="media__body">
-                <h3 class="media__title block__heading">Travel Details</h3>
+                <h3 class="media__title block__heading">
+                  How long to spend in Nepal
+                </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dignissimos atque mollitia quisquam, fugiat quaerat aliquid
-                  doloremque ea sunt velit itaque.
+                  You need at least 7 to 10 days to get a decent introduction to
+                  Nepal. Not enough time to do the country justice, a stay of
+                  this duration will give you a chance to delve into some of my
+                  country's highlights.
                 </p>
               </div>
             </div>
@@ -318,15 +322,15 @@
           <li>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
+                <img src="images/call.png" class="icon" alt="">
               </div>
               <div class="media__body">
-                <h3 class="media__title block__heading">Book Your Trip</h3>
+                <h3 class="media__title block__heading">Safety</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci, odio!
+                  Nepal is generally free of major scams, but as with any poorer
+                  country that survives heavily off of tourism, there is the
+                  possibility that some people will try to overcharge tourists
+                  for goods and services.
                 </p>
               </div>
             </div>
@@ -336,10 +340,13 @@
     </section>
 
     <!-- Testimonial Block -->
-    <section class="block" data-aos="zoom-in">
+    <section class="block testimonial-block" data-aos="zoom-in">
       <header class="block__header">
-        <h2>What are customers are saying</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2>What locals are saying?</h2>
+        <p>
+          True wisdom is the echo of local voices, for they alone hold the keys
+          to authentic understanding
+        </p>
       </header>
       <div class="container">
         <div class="card testimonial">
@@ -358,9 +365,10 @@
             </div>
             <blockquote class="quote">
               <p class="quote__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-                sed veniam incidunt nobis fugiat cumque at cupiditate adipisci
-                illo iure.
+                Experience the serenity of the Himalayas, the rich cultural
+                heritage, and the warm hospitality of the Nepalese people.
+                Embark on a journey with us to Nepal, where adventure meets
+                tranquility. Discover Nepal, Discover Yourself.
               </p>
               <footer>
                 <div class="media">
@@ -370,8 +378,10 @@
                     </svg>
                   </div>
                   <div class="media__body">
-                    <h3 class="media__title quote__author">Navin Gharti</h3>
-                    <p class="quote__organization">Don</p>
+                    <h3 class="media__title quote__author">
+                      Ram Bahadur Ghale
+                    </h3>
+                    <p class="quote__organization">Nepalese Local</p>
                   </div>
                 </div>
               </footer>
@@ -386,102 +396,107 @@
       <div class="callout callout--primary callout-signup">
         <div class="grid grid--1x2">
           <div class="callout__content">
-            <h2 class="callout__heading">Ready To Get Started?</h2>
+            <h2 class="callout__heading">Are You Ready?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium adipisci doloribus tempora quasi iure vel! Eius quasi
-              illo libero perferendis!
+              Plan your trip, pack your bags, and get ready to dive into one of
+              the most extraordinary places on Earth. Nepal awaits your
+              exploration with open arms!
             </p>
           </div>
-          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+          <a href="#" class="btn btn--secondary btn--stretched">
+            <img class="logo-img" src="images/logo.svg" alt="" />
+            <span class="callout__btn-text"> Book Your trip </span>
+          </a>
         </div>
       </div>
     </div>
     <!-- Footer Block -->
-    <footer class="block block--dark footer">
+    <footer id="info" class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Products</h2>
-            <object
+            <h2 class="collapsible__heading footer__heading">
+              Travel Agencies
+            </h2>
+            <img
               class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
+              src="images/chevron.svg"
+              alt=""
+            />
           </div>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="">Item1</a></li>
-              <li><a href="">Item2</a></li>
-              <li><a href="">Item3</a></li>
-              <li><a href="">Item4</a></li>
-              <li><a href="">Item5</a></li>
+              <li><a href="">Nepal Trek & Tours</a></li>
+              <li><a href="">Sherpa Expedition & Trekking</a></li>
+              <li><a href="">Ace the Himalaya</a></li>
+              <li><a href="">Base Camp Adventure Pvt. Ltd.</a></li>
+              <li><a href="">Buddha Treks and Expedition</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Navin</h2>
-            <object
+            <h2 class="collapsible__heading footer__heading">Travel Options</h2>
+            <img
               class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
+              src="images/chevron.svg"
+              alt=""
+            />
           </div>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="">Item1</a></li>
-              <li><a href="">Item2</a></li>
-              <li><a href="">Item3</a></li>
-              <li><a href="">Item4</a></li>
-              <li><a href="">Item5</a></li>
-              <li><a href="">Item6</a></li>
+              <li><a href="">Domestic Flights</a></li>
+              <li><a href="">Long-distance Buses</a></li>
+              <li><a href="">Taking Taxis</a></li>
+              <li><a href="">Ride Share Apps</a></li>
+              <li><a href="">Hiring Private Drivers</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Akash</h2>
-            <object
+            <h2 class="collapsible__heading footer__heading">Top Picks </h2>
+            <img
               class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
+              src="images/chevron.svg"
+              alt=""
+            />
           </div>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="">Item1</a></li>
-              <li><a href="">Item2</a></li>
-              <li><a href="">Item3</a></li>
-              <li><a href="">Item4</a></li>
-              <li><a href="">Item5</a></li>
-              <li><a href="">Item6</a></li>
+              <li><a href="">Everest Base Camp</a></li>
+              <li><a href="">Lumbini</a></li>
+              <li><a href="">Pokhara Valley and Phewa Lake
+              </a></li>
+              <li><a href="">Bandipur</a></li>
+              <li><a href="">Gulmi</a></li>
+              <li><a href="">Chitwan National Park</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Vai</h2>
-            <object
+            <h2 class="collapsible__heading footer__heading">Advice</h2>
+            <img
               class="icon icon--white collapsible__chevron"
-              type="image/svg+xml"
-              data="images/chevron.svg"
-            ></object>
+              src="images/chevron.svg"
+              alt=""
+            />
           </div>
           <div class="collapsible__content">
             <ul class="list">
-              <li><a href="">Item1</a></li>
-              <li><a href="">Item2</a></li>
-              <li><a href="">Item3</a></li>
-              <li><a href="">Item4</a></li>
-              <li><a href="">Item5</a></li>
-              <li><a href="">Item6</a></li>
+              <li><a href="">Get travel insurance for Nepal</a></li>
+              <li><a href="">Don't hesitate to Bargain</a></li>
+              <li><a href="">Dressing (conservatively)</a></li>
+              <li><a href="">Taste Street Foods</a></li>
+              <li><a href="">Prepare for Altitude Sickness</a></li>
+              <li><a href="">Try Homestay</a></li>
             </ul>
           </div>
         </section>
         <div class="footer__brand">
           <img class="logo-img" src="images/logo.svg" alt="" />
-          <p class="footer__copyright">Copyright 200 Navin</p>
+          <p class="footer__copyright">Copyright 2081 &copy;Navin</p>
         </div>
       </div>
     </footer>

@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -337,12 +339,12 @@ a {
   background-repeat: no-repeat;
 }
 .card--primary .card__header {
-  /* background: var(--color-primary); */
+  background: var(--color-primary);
   color: #fff;
 }
 
 .card--secondary .card__header {
-  /* background: var(--color-secondary); */
+  background: var(--color-secondary);
   color: #fff;
 }
 
@@ -378,18 +380,14 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
-.ktm {
+.card .ktm {
   background: url(../images/ktm-bg.jpg);
 }
 
-.hike {
+.card .hike {
   background: url(../images/trekking.jpg);
 }
-.everest {
+.card .everest {
   background: url(../images/everest-bg.jpg);
 }
 
@@ -409,6 +407,11 @@ a {
 }
 .plan--popular:hover {
   transform: scale(1.15);
+}
+@media screen and (min-width: 768px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
 }
 @media screen and (min-width: 1024px) {
   .plan__name {

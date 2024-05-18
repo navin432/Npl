@@ -526,7 +526,7 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
-  max-width: 970px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -653,7 +653,6 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0.5rem 1rem;
-  align-items: center;
 }
 .logo-img {
   height: 40px;
@@ -747,7 +746,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
@@ -756,7 +755,7 @@ a {
 
 .block-domain__prices .badge {
   padding: 0.5rem 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .block-domain__prices {
@@ -820,6 +819,7 @@ a {
 
 /* Footer */
 .footer {
+  padding-top: 14rem;
   background: #232323;
 }
 
@@ -895,5 +895,5 @@ a {
 
 /* Sign-up Callout */
 .callout-signup {
-  transform: translateY(5rem);
+  transform: translateY(10rem);
 }

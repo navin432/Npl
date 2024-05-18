@@ -598,11 +598,11 @@ a {
     padding: 2rem;
   }
 
-  .callout .btn{
+  .callout .btn {
     overflow: hidden;
   }
 
-  .callout__btn-text{
+  .callout__btn-text {
     transform: translateY(0);
     transition: transform 0.15s;
   }
@@ -613,7 +613,6 @@ a {
   .testimonial {
     padding-left: 1rem;
   }
-  
 }
 /* Collapsibles */
 
@@ -690,12 +689,6 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 350px) {
-  .block {
-    padding: var(--padding-vertical) 1rem;
-  }
 }
 
 /* Navigation Bar */

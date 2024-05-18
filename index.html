@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -37,13 +38,13 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Nekapa Yemale Zindabad</h1>
+          <h1 class="block__heading" data-aos="fade-right">Nekapa Yemale Zindabad</h1>
           <p class="hero__tagline">
             Politics should guide the country in the right path and direction
           </p>
           <a href="#" class="btn btn--accent btn--stretched"> Vote CPN UML </a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="images/hand.webp 1x, images/hand@2x.webp 2x"
@@ -58,7 +59,7 @@
     </section>
 
     <!-- Domain Block -->
-    <section id="places-to-go" class="block container block-domain">
+    <section data-aos="fade-up" id="places-to-go" class="block container block-domain">
       <header class="block__header">
         <h2>Places to Go & Their prices</h2>
         <p>
@@ -89,7 +90,7 @@
     </section>
 
     <!-- Plans Block -->
-    <section class="block container block-plans">
+    <section data-aos="fade-up" class="block container block-plans">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -164,9 +165,8 @@
     
         </p>
       </header>
-
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <a href="/">
               <img class="logo-img" src="images/logo.svg" alt="" />
@@ -178,7 +178,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/everest.webp 1x, images/everest@2x.webp 2x"
@@ -190,7 +190,7 @@
           <img class="feature__image" src="images/everest@2x.jpg" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="fade-left">
         <div class="feature__content">
           <span class="icon-container">
             <a href="/">
@@ -203,7 +203,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-right">
           <source
             type="image/webp"
             srcset="images/lumbini.webp 1x, images/lumbini@2x.webp 2x"
@@ -216,7 +216,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <a href="/">
               <img class="logo-img" src="images/logo.svg" alt="" />
@@ -228,7 +228,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/pokhara.webp 1x, images/pokhara@2x.webp 2x"
@@ -248,15 +248,15 @@
             <h2>Plan Your Trip</h2>
         </header>
         <div class="container grid grid--1x2">
-            <picture class="block-showcase__image">
+            <picture data-aos="fade-right" class="block-showcase__image">
                 <source type="image/webp" srcset="images/mero-gau@2x.webp">
                 <source type="image/jpg" srcset="images/mero-gau@2x.jpg">
                 <img  src="images/mero-gau@2x.jpg" alt="">
             </picture>
-            <ul class="list">
+            <ul class="list" data-aos="fade-up">
                 <li>
                     <div class="media">
-                    <div class="media__image">
+                      <div class="media__image">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#wordpress"></use>
                         </svg>
@@ -307,7 +307,7 @@
     </section>
 
     <!-- Testimonial Block -->
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
         <header class="block__header">
           <h2>What are customers are saying</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -453,5 +453,9 @@
         </div>
       </footer>      
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

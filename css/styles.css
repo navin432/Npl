@@ -332,7 +332,7 @@ a {
 .card__body {
   padding: 2rem 3rem;
 }
-.card__header{
+.card__header {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -382,18 +382,18 @@ a {
   transform: scale(1.1);
 }
 
-.ktm{
+.ktm {
   background: url(../images/ktm-bg.jpg);
 }
 
-.hike{
+.hike {
   background: url(../images/trekking.jpg);
 }
-.everest{
+.everest {
   background: url(../images/everest-bg.jpg);
 }
 
-.plan--popular .card__header{
+.plan--popular .card__header {
   position: relative;
 }
 .plan--popular .card__header::before {
@@ -589,6 +589,32 @@ a {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .callout .btn {
+    margin: 0;
+  }
+
+  .callout {
+    padding: 2rem;
+  }
+
+  .callout .btn{
+    overflow: hidden;
+  }
+
+  .callout__btn-text{
+    transform: translateY(0);
+    transition: transform 0.15s;
+  }
+
+  .callout .logo-img {
+    display: none;
+  }
+  .testimonial {
+    padding-left: 1rem;
+  }
+  
+}
 /* Collapsibles */
 
 .collapsible__header {
@@ -605,7 +631,6 @@ a {
   transform: rotate(-90deg);
   transition: transform 0.3s;
 }
-
 
 .collapsible__content {
   max-height: 0;

@@ -957,3 +957,9 @@ a {
   margin: 0 auto;
   transform: translateY(-6rem);
 }
+
+#image {
+  height: 43rem;
+  width: 100%;
+  object-fit: cover;
+}

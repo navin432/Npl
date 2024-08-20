@@ -949,3 +949,11 @@ a {
 .callout-signup {
   transform: translateY(10rem);
 }
+
+/* Explore Places */
+
+.btn--accent.explore {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-6rem);
+}
